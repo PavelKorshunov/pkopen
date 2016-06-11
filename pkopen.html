@@ -3,85 +3,67 @@
 	<head>
 		<title>pkopen</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/fonts.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<link rel="shortcut icon" type="image/x-icon" href="images/pk.ico">
-		<script src="js/jquery-1.12.2.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="images/pk.png">
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<script src="js/slider.js"></script>
 	</head>
 	<body>
-		<div id="page">
-			<div id="navigation">
+		<div id="navigation">
+			<div class="other">
 				<a href="#" class="logo">
 					<span>pk</span>
 				</a>
-				<div class="other">
-					<ul>
-						<li><a href="#">Музыка</a></li>
-						<li><a href="#">Книги</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Статьи</a></li>
-						<li><a href="#">Спорт</a>
-							<ul>
-								<li class="radiusup"><a href="#">Футбол</a></li>
-								<li><a href="#">Баскетбол</a></li>
-								<li class="radiusdown"><a href="#">Хоккей</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Фото</a></li>
-						<li><a href="#">О сайте</a></li>
-					</ul>
-				</div>
-<!-- 				<div class="header_nav">
-					<div class="music">
-						<a href="#">Музыка</a>
-					</div>
-					<div class="books">
-						<a href="#">Книги</a>
-					</div>
-					<div class="news">
-						<a href="#">Новости</a>
-					</div>
-					<div class="photo">
-						<a href="#">Фото</a>
-					</div>
-					<div class="about_site">
-						<a href="#">О сайте</a>
-					</div>
-					<div class="sport">
-					<a href="#">Спорт</a>
+				<ul>
+					<li><a href="#">Музыка</a></li>
+					<li><a href="#">Книги</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Спорт</a>
 						<ul>
-							<a href="#"><li>Футбол</li></a>
-							<a href="#"><li>Хоккей</li></a>
-							<a href="#"><li>Баскетбол</li></a>
+							<li class="radiusup"><a href="#">Футбол</a></li>
+							<li><a href="#">Баскетбол</a></li>
+							<li class="radiusdown"><a href="#">Хоккей</a></li>
 						</ul>
-					</div>
-				</div> -->
+					</li>
+					<li><a href="#">Видео</a></li>
+					<li><a href="#">Фото</a></li>
+				</ul>
 			</div>
-			<div id="main">
+		</div>
+		<div id="all_content">
+			<div class="main">
 				<div class="social_networks">
-					<a href="http://vk.com/ampec"><img src="images/vk_logo.png" alt="vk.com"></a>
-					<a href="https://www.facebook.com/ampec"><img src="images/facebook_logo.png" alt="facebook"></a>
-					<a href="https://twitter.com/RealAmPeC"><img src="images/twitter_logo.png" alt="twitter"></a>
+					<a target="_blank" href="http://vk.com/ampec" class="vk"><img src="images/vk_logo.png" class="change" alt="vk.com"></a>
+					<a target="_blank" href="https://www.facebook.com/ampec"><img src="images/facebook_logo.png" class="change" alt="facebook"></a>
+					<a target="_blank" href="https://twitter.com/RealAmPeC"><img src="images/twitter_logo.png" class="change" alt="twitter"></a>
 				</div>
-				<div id="main_viewport" class="main_viewport">
-					<button class="arrow arrow_left"><span class="prev">&lt;</span></button>
+				<div class="main_viewport">
+					<button class="arrow arrow_left prev"></button>
 					<div class="main_cont">
-						<ul>
+						<ul class="slider">
 							<li><a href="#"><img src="images/for_music.png"></a></li>
 							<li><a href="#"><img src="images/glass.png"></a></li>
+							<li><a href="#"><img src="images/for_music.png"></a></li>
 						</ul>
 					</div>
-					<button class="arrow arrow_right"><span class="next">&gt;</span></button>
+					<button class="arrow arrow_right next"></button>
+				</div>
+				<div class="dots_menu">
+					<a class="first_dot dot active_dot" href="javascript://;"></a>
+					<a class="dot" href="javascript://;"></a>
+					<a class="dot" href="javascript://;"></a>
 				</div>
 			</div>
-			<div id="content">
+			<div class="content">
 				<div class="last_news">
 					<em>last news from pk</em>
 				</div>
 				<!--Start new-->
 				<div class="new1">
 					<div class="new_in1">
-						<img src="images/barcelona.png" alt="barca">
+						<a href="#"><img src="images/barcelona.png" alt="barca"></a>
 					</div>
 					<div class="new_incont1">
 						<a href="#"><h1>Дубль Месси помог “Барселоне” одержать победу над “Эйбаром”</h1></a>
@@ -89,7 +71,7 @@
 					<div class="statistic">
 						<img src="images/views.png" alt="views">
 						<span>просмотров:</span>
-						<span class="comments"><img src="images/comments.png" alt="comments">комментарии:</span>
+						<img src="images/comments.png" alt="comments"><span class="comments">комментарии:</span>
 						<img src="images/calendar.png" alt="calendar">
 						<span>публикация:</span>
 					</div>
@@ -99,7 +81,7 @@
 				<!--Start new-->
 				<div class="new2">
 					<div class="new_in2">
-						<img src="images/rav-4.png" alt="auto">
+						<a href="#"><img src="images/rav-4.png" alt="auto"></a>
 					</div>
 					<div class="new_incont2">
 						<a href="#"><h1>Toyota пересмотрела комплектации RAV4 в России</h1></a>
@@ -107,7 +89,7 @@
 						<div class="statistic1">
 						<img src="images/views.png" alt="views">
 						<span>просмотров:</span>
-						<span class="comments"><img src="images/comments.png" alt="comments">комментарии:</span>
+						<img src="images/comments.png" alt="comments"><span class="comments">комментарии:</span>
 						<img src="images/calendar.png" alt="calendar">
 						<span>публикация:</span>
 					</div>
@@ -115,27 +97,9 @@
 				<!--End new-->
 			</div>
 		</div>
-		<script>
-			var width = 550;
-			var count = 1;
-
-			var carousel = document.getElementById('main_viewport');
-
-			var list = carousel.querySelector('ul');
-			var listElement = carousel.querySelectorAll('li');
-
-			var position = 0;
-
-			carousel.querySelector('.arrow_left').onclick = function() {
-			  position = Math.min(position + width * count, 0)
-			    list.style.marginLeft = position + 'px';
-			};
-
-
-			carousel.querySelector('.arrow_right').onclick = function() {
-			  position = Math.max(position - width * count, -width * (listElement.length - count));
-			    list.style.marginLeft = position + 'px';
-			};
-		</script>
+		<div class="footer">
+			<em class="Reg">© 2016 <q>pkopen</q> by Pavel Korshunov</em>
+			<a href="#" class="Reg">О сайте</a>
+		</div>
 	</body>
 </html>
